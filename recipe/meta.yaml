@@ -14,9 +14,8 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
-  # r-rgl is not available on win and osx b/c libglu dependency not available
-  skip: true  # [win or osx]
+  number: 2
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,14 +44,25 @@ about:
   license: GPL-2 | GPL-3
   summary: Local inferential feature significance for multivariate kernel density estimation.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: feature
+# Version: 1.2.13
+# Date: 2015-10-26
+# Title: Local Inferential Feature Significance for Multivariate Kernel Density Estimation
+# Author: Tarn Duong <tarn.duong@gmail.com> & Matt Wand <Matt.Wand@uts.edu.au>
+# Maintainer: Tarn Duong <tarn.duong@gmail.com>
+# Depends: R (>= 1.4.0)
+# Imports: grDevices, graphics, ks (>= 1.10.0), misc3d, rgl, stats, tcltk
+# Suggests: MASS
+# Description: Local inferential feature significance for multivariate kernel density estimation.
+# License: GPL-2 | GPL-3
+# URL: http://www.mvstat.net/tduong
+# NeedsCompilation: no
+# Packaged: 2015-10-26 10:54:30 UTC; duongt
+# Repository: CRAN
+# Date/Publication: 2015-10-26 15:58:45
