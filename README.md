@@ -1,11 +1,11 @@
-About r-feature
-===============
+About r-feature-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-feature-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.mvstat.net/tduong
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-feature-feedstock/blob/main/LICENSE.txt)
 
 Summary: Local inferential feature significance for multivariate kernel density estimation.
 
