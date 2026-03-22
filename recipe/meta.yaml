@@ -26,7 +26,6 @@ requirements:
     - r-ks >=1.10.0
     - r-misc3d
     - r-rgl
-    - libgl-devel                    # [linux]
   run:
     - r-base
     - r-ks >=1.10.0
